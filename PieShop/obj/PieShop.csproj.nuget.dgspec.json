@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wenhua\\source\\repos\\PieShop\\PieShop\\PieShop.csproj": {}
+    "C:\\Users\\wenhua.FAREAST\\PieShop\\PieShop\\PieShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wenhua\\source\\repos\\PieShop\\PieShop\\PieShop.csproj": {
+    "C:\\Users\\wenhua.FAREAST\\PieShop\\PieShop\\PieShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wenhua\\source\\repos\\PieShop\\PieShop\\PieShop.csproj",
+        "projectUniqueName": "C:\\Users\\wenhua.FAREAST\\PieShop\\PieShop\\PieShop.csproj",
         "projectName": "PieShop",
-        "projectPath": "C:\\Users\\wenhua\\source\\repos\\PieShop\\PieShop\\PieShop.csproj",
-        "packagesPath": "C:\\Users\\wenhua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wenhua\\source\\repos\\PieShop\\PieShop\\obj\\",
+        "projectPath": "C:\\Users\\wenhua.FAREAST\\PieShop\\PieShop\\PieShop.csproj",
+        "packagesPath": "C:\\Users\\wenhua.FAREAST\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wenhua.FAREAST\\PieShop\\PieShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\wenhua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wenhua.FAREAST\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +27,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/packages": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -43,14 +45,41 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -62,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }

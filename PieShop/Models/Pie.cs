@@ -1,10 +1,4 @@
-﻿using PieShop.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace PieShop.Models
+﻿namespace PieShop.Models
 {
     public class Pie
     {
@@ -20,5 +14,6 @@ namespace PieShop.Models
         public bool InStock { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+        public string Notes { get; set; }
     }
 }
